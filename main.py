@@ -299,8 +299,29 @@ def draw_board(board):
 board = create_board()
 #(newboard,game_end)=board.get_game_grid(board)
 #board.print_grid(board,newboard)
-type=1
-type2=2
+print("Enter the required difficulty level")
+print("Enter 1 for easy level")
+print("Enter 2 for meduim level")
+print("Enter 3 for hard level")
+type=int(input())
+while(type!=1 and type !=2 and type!=3):
+    print("invalid type,please try again :)")
+    print("Enter the required difficulty level")
+    print("Enter 1 for easy level")
+    print("Enter 2 for meduim level")
+    print("Enter 3 for hard level")
+    type = int(input())
+print("Enter the required algorithm")
+print("Enter 1 for Min-max")
+print("Enter 2 for Min-max with alpha-beta brunning")
+type2=int(input())
+while(type2!=1 and type2 !=2 ):
+    print("invalid type,please try again :)")
+    print("Enter the required algorithm")
+    print("Enter 1 for Min-max")
+    print("Enter 2 for Min-max with alpha-beta brunning")
+    type2 = int(input())
+
 print_board(board)
 game_over = False
 
